@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="color-scheme" content="dark">
+    
+    <title>Sổ Tay HNKH 2025 - Hàn Quốc</title>
+
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#0F1E30">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Sổ Tay HNKH">
+    <link rel="apple-touch-icon" href="images/icon-192.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sổ Tay HNKH 2025 - Hàn Quốc">
+    <meta property="og:description" content="Sổ tay thông tin Hội nghị Khách hàng Thống Nhất 2025 tại Hàn Quốc.">
+    <meta property="og:image" content="Https://tn-hnkh2025-hq.netlify.app/images/share-thumbnail.jpg">
+    <meta property="og:url" content="Https://tn-hnkh2025-hq.netlify.app/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sổ Tay HNKH 2025 - Hàn Quốc">
+    <meta name="twitter:image" content="Https://tn-hnkh2025-hq.netlify.app/images/share-thumbnail.jpg">
+
+    <script src="app.js" defer></script>
+    
+    <style>
+        :root {
+            color-scheme: dark; 
+            --mau-nen-chinh: #0A1420;
+            --mau-nen-phu-rgba: rgba(15, 30, 48, 0.95); 
+            --mau-nen-phu-solid: #0F1E30; 
+            --mau-chu-chinh: #EAF2FF;
+            --mau-chu-phu: #93a4b8;
+            --mau-nhan: #C7A34B;
+            --mau-nhan-light: #DCC06A; 
+            --mau-nhan-rgba: rgba(199, 163, 75, 0.2);
+            --mau-zalo: #0068FF;
+            --font-chinh: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --radius: 12px;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-chinh); margin: 0; padding: 0;
+            background-color: var(--mau-nen-chinh); color: var(--mau-chu-chinh); 
+            line-height: 1.6;
+        }
+        
+        /* === V53/V54 FIX: STICKY UI (Dính trên đầu) === */
+        .sticky-ui-container {
+            position: sticky; top: 0; z-index: 100;
+            background-color: var(--mau-nen-phu-rgba); 
+            backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            border-bottom: 1px solid var(--mau-nhan-rgba);
+            padding-top: env(safe-area-inset-top); 
+        }
+        .section {
+            margin-bottom: 15px; border-radius: var(--radius); overflow: hidden;
+            background-color: var(--mau-nen-phu-rgba); 
+            backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+            border: 1px solid var(--mau-nhan-rgba);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            scroll-margin-top: 140px; 
+        }
+        .header { padding: 20px 15px 10px 15px; text-align: center; }
+        .header h1 { margin: 0; font-size: 1.5rem; color: var(--mau-nhan); }
+        .nav { 
+            display: flex; justify-content: flex-start; 
+            padding: 0 10px 10px 10px; overflow-x: auto; 
+            white-space: nowrap; 
+        }
+        .nav::-webkit-scrollbar { display: none; }
+        
+        /* === V53/V54 FIX: NAV GLOW/SCROLL INDICATOR === */
+        .sticky-ui-container::before, .sticky-ui-container::after {
+            content: ''; position: absolute; bottom: 0; height: 50px; 
+            width: 60px; z-index: 2; pointer-events: none; opacity: 0;
+            transition: opacity 0.2s ease-in-out; display: flex; align-items: center;
+        }
+        .sticky-ui-container::before {
+            left: 0;
+            background: linear-gradient(to right, var(--mau-nen-phu-solid) 20%, rgba(15, 30, 48, 0) 100%);
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23C7A34B' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E");
+            padding-left: 5px; justify-content: flex-start;
+        }
+        .sticky-ui-container::after {
+            right: 0;
+            background: linear-gradient(to left, var(--mau-nen-phu-solid) 20%, rgba(15, 30, 48, 0) 100%);
+            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23C7A34B' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+            padding-right: 5px; justify-content: flex-end;
+        }
+        .show-glow-left::before { opacity: 1; }
+        .show-glow-right::after { opacity: 1; }
+        
+        .nav a {
+            padding: 8px 15px; text-decoration: none; color: var(--mau-chu-phu);
+            font-weight: 600; border-radius: 20px; transition: background-color 0.3s, color 0.3s;
+            margin-right: 8px;
+        }
+        .nav a:hover { background-color: #2a3a4c; color: var(--mau-chu-chinh); }
+        .nav a.active { 
+            background: linear-gradient(145deg, var(--mau-nhan-light), var(--mau-nhan));
+            color: #0A1420; box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .container { padding: 15px; }
+        .section-header {
+            display: flex; justify-content: space-between; align-items: center;
+            cursor: pointer; background-color: transparent; color: var(--mau-nhan);
+            padding: 15px 20px; margin: 0; font-size: 1.3rem; transition: background-color 0.3s;
+        }
+        .section-header:hover { background-color: var(--mau-nhan-rgba); }
+        .section-toggle-icon {
+            font-size: 1.8rem; font-weight: 300; color: var(--mau-nhan);
+            transition: transform 0.4s ease-in-out; margin-left: 10px;
+        }
+        .section-content {
+            max-height: 5000px; overflow: hidden;
+            transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+            padding: 0 20px 20px 20px;
+        }
+        /* Icon khi đóng: hiển thị '+' */
+        .section-header:not(.is-open) .section-toggle-icon { content: '+'; transform: rotate(0deg); } 
+        /* Icon khi mở: hiển thị '−' */
+        .section-header.is-open .section-toggle-icon { content: '−'; transform: rotate(0deg); }
+        
+        /* Đóng nội dung khi không có class is-open */
+        .section-header:not(.is-open) + .section-content { max-height: 0; padding: 0 20px; }
+        
+        /* ... CSS còn lại giữ nguyên theo V50/V51 của bạn ... */
+        .contact-group-header {
+            font-size: 1.1rem; font-weight: bold; color: var(--mau-nhan);
+            margin-top: 20px; margin-bottom: 10px; padding-bottom: 8px;
+            border-bottom: 1px solid var(--mau-nhan);
+        }
+        .contact-group-header:first-child { margin-top: 0; }
+        .contact-item {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 12px 0; border-bottom: 1px solid #2a3a4c;
+        }
+        .contact-list .contact-item:last-of-type { border-bottom: none; }
+        .contact-details { display: flex; flex-direction: column; margin-right: 15px; }
+        .contact-name { font-weight: 500; color: var(--mau-chu-chinh); font-size: 1.1rem; }
+        .contact-title { font-style: italic; color: var(--mau-chu-phu); font-size: 0.9rem; }
+        .contact-button {
+            display: inline-flex; align-items: center; justify-content: center;
+            background-color: var(--mau-zalo); color: white; padding: 10px 15px;
+            border-radius: 25px; text-decoration: none; font-weight: 600;
+            font-size: 0.9rem; white-space: nowrap; transition: background-color 0.3s;
+        }
+        .contact-button:hover { background-color: #0056D6; }
+        .contact-button-phone { background-color: #1a8a3a; }
+        .contact-button-phone:hover { background-color: #136a2d; }
+        .contact-button svg { width: 1.2em; height: 1.2em; fill: white; margin-right: 6px; }
+        
+        table.styled-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        table.styled-table th, table.styled-table td { border: 1px solid #2a3a4c; padding: 12px; text-align: left; vertical-align: middle; }
+        table.styled-table th { background-color: var(--mau-nen-phu-solid); font-weight: 600; }
+        table.styled-table tr:nth-child(even) { background-color: rgba(0,0,0,0.1); }
+        tr.day-header { background-color: var(--mau-nen-phu-solid); }
+        tr.day-header td {
+            font-weight: 700; font-size: 1.1rem; color: var(--mau-nhan);
+            padding-top: 15px; padding-bottom: 15px;
+        }
+        td small {
+            color: var(--mau-chu-phu); font-style: italic; font-size: 0.9rem;
+        }
+        .play-button {
+            background: linear-gradient(145deg, var(--mau-nhan-light), var(--mau-nhan));
+            color: var(--mau-nen-chinh); border: none;
+            width: 40px; height: 40px; border-radius: 50%; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            transition: background-color 0.3s; box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .play-button:hover { background: var(--mau-nhan-light); }
+        .play-button svg { width: 18px; height: 18px; fill: var(--mau-nen-chinh); margin-left: 3px; }
+        .lang-table-header {
+            font-size: 1.1rem; font-weight: bold; color: var(--mau-nhan);
+            padding: 15px 0 5px 0;
+        }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 10px; margin-top: 15px; }
+        .thumbnail { width: 100%; height: 100px; object-fit: cover; border-radius: 8px; cursor: pointer; border: 1px solid #2a3a4c; }
+        .location-item, .hanbok-item, .menu-item { margin-bottom: 25px; border-bottom: 1px dashed #2a3a4c; padding-bottom: 25px; }
+        .location-item:last-child, .hanbok-item:last-child, .menu-item:last-child { border-bottom: none; }
+        .location-item h3, .hanbok-item h3, .menu-item h3 { color: var(--mau-nhan); margin-top: 0; border-left: 4px solid var(--mau-nhan); padding-left: 10px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; color: var(--mau-chu-phu);}
+        p { color: var(--mau-chu-phu); }
+        strong { color: var(--mau-chu-chinh); }
+        .icon-warning {
+            width: 1.1em; height: 1.1em; fill: var(--mau-nhan);
+            margin-right: 8px; vertical-align: -0.15em;
+        }
+        .important-note { color: var(--mau-nhan); font-weight: 500; }
+        .action-button {
+            display: inline-block;
+            background: linear-gradient(145deg, var(--mau-nhan-light), var(--mau-nhan));
+            color: var(--mau-nen-chinh) !important;
+            padding: 8px 15px; border-radius: 20px; text-decoration: none;
+            font-weight: 600; margin-top: 10px; font-size: 0.9rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .action-button:hover { background: var(--mau-nhan-light); }
+        .app-list { margin-top: 10px; padding: 0; list-style: none; }
+        .app-item {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 12px 0; border-bottom: 1px solid #2a3a4c;
+        }
+        .app-item:last-child { border-bottom: none; }
+        .app-item span { font-weight: 500; color: var(--mau-chu-chinh); padding-right: 10px; }
+        .app-buttons { white-space: nowrap; }
+        .app-buttons a {
+            background-color: #2a3a4c; color: var(--mau-chu-phu) !important;
+            padding: 5px 12px; border-radius: 15px; text-decoration: none;
+            font-size: 0.85rem; margin-left: 8px; font-weight: 600;
+        }
+        .app-buttons a:hover { background-color: #3a4a5c; color: var(--mau-chu-chinh) !important; }
+        .lightbox { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.9); justify-content: center; align-items: center; }
+        .lightbox-content { max-width: 90%; max-height: 80%; }
+        .lightbox-close { position: absolute; top: 20px; right: 35px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer; }
+        .footer { text-align: center; padding: 20px; font-size: 0.9rem; color: var(--mau-chu-phu); }
+        /* Map Choice Modal */
+        .map-modal-overlay {
+            display: none; position: fixed; z-index: 2000; left: 0; top: 0;
+            width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center; align-items: center; backdrop-filter: blur(5px);
+        }
+        .map-modal-content {
+            background-color: var(--mau-nen-phu-solid); padding: 20px;
+            border-radius: var(--radius); width: 90%; max-width: 350px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3); border: 1px solid var(--mau-nhan-rgba);
+        }
+        .map-modal-content h3 {
+            color: var(--mau-nhan); margin-top: 0; margin-bottom: 20px;
+            font-size: 1.2rem; text-align: center;
+        }
+        .map-modal-button {
+            display: block; width: 100%; padding: 12px; margin-bottom: 12px;
+            border-radius: 8px; border: none; font-size: 1rem;
+            font-weight: 600; cursor: pointer; text-align: center; transition: opacity 0.2s;
+        }
+        .map-modal-button:hover { opacity: 0.8; }
+        .map-modal-button.kakao { background-color: #FFDE00; color: #3C1E1E; }
+        .map-modal-button.google { background-color: #FFFFFF; color: #4A4A4A; }
+        .map-modal-button.naver { background-color: #03C75A; color: white; }
+        .map-modal-button.close {
+            background-color: transparent; color: var(--mau-chu-phu);
+            margin-top: 10px; margin-bottom: 0;
+        }
+        /* Fix cho TTS buttons */
+        .play-button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+        <symbol id="icon-zalo" viewbox="0 0 460.1 460.1"><path d="M346.9 230c0-60.6-49.2-109.8-109.8-109.8s-109.8 49.2-109.8 109.8c0 56.4 42.6 103.2 98.1 108.9 2.6.3 5.3.4 7.9.4h7.6c57.2 0 103.9-46.7 103.9-103.9-.1-2-.1-3.9-.1-5.6zM170.8 248.8c-11.3 0-20.5-9.2-20.5-20.5s9.2-20.5 20.5-20.5 20.5 9.2 20.5 20.5-9.2 20.5-20.5 20.5zm118.5 0c-11.3 0-20.5-9.2-20.5-20.5s9.2-20.5 20.5-20.5 20.5 9.2 20.5 20.5-9.2 20.5-20.5 20.5z" /><path d="M230 0C103.1 0 0 103.1 0 230s103.1 230 230 230 230-103.1 230-230S356.9 0 230 0zm0 414.2c-101.8 0-184.2-82.4-184.2-184.2S128.2 45.8 230 45.8s184.2 82.4 184.2 184.2-82.4 184.2-184.2 184.2z" /></symbol>
+        <symbol id="icon-phone" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></symbol>
+        <symbol id="icon-play" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></symbol>
+        <symbol id="icon-warning" viewBox="0 0 512 512"><path d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.7 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24v96c0 13.3 10.7 24 24 24s24-10.7 24-24v-96c0-13.3-10.7-24-24-24zm0 192c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32z"/></symbol>
+    </svg>
+
+    <div class="sticky-ui-container">
+        <header class="header">
+            <h1>Sổ Tay HNKH 2025 - Hàn Quốc</h1>
+        </header>
+        <nav class="nav">
+            <a href="#info">Liên hệ</a> <a href="#notes">Lưu Ý</a> <a href="#schedule">Lịch trình</a> 
+            <a href="#locations">Địa điểm</a> <a href="#hanbok">Hanbok</a> <a href="#menu">Menu</a> 
+            <a href="#lang">Giao tiếp</a>
+        </nav>
+    </div>
+
+    <div class="container">
+
+        <section id="info" class="section">
+            <h2 class="section-header section-toggle is-open" onclick="toggleSection(this)"><span>Thông Tin Liên Hệ (BTC)</span><span class="section-toggle-icon">−</span></h2>
+            <div class="section-content">
+                <div class="contact-list">
+                    <h3 class="contact-group-header">Đại diện BTC</h3>
+                    <div class="contact-item">
+                        <div class="contact-details"><span class="contact-name">Chu Văn Vượng</span><span class="contact-title">Trưởng phòng Nhân Sự</span></div>
+                        <a href="https://zalo.me/0982718515" class="contact-button"><svg><use xlink:href="#icon-zalo" /></svg><span>0982718515</span></a>
+                    </div>
+                    
+                    <h3 class="contact-group-header">Hỗ trợ Xe 1</h3>
+                    <div class="contact-item">
+                        <div class="contact-details"><span class="contact-name">HDV Lưu Việt Dũng (Xe 1)</span><span class="contact-title">Zalo/Viber</span></div>
+                        <a href="https://zalo.me/0912874586" class="contact-button"><svg><use xlink:href="#icon-zalo" /></svg><span>0912874586</span></a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-details"><span class="contact-name">HDV Lưu Việt Dũng (Xe 1)</span><span class="contact-title">Gọi thoại</span></div>
+                        <a href="tel:0985516515" class="contact-button contact-button-phone"><svg><use xlink:href="#icon-phone" /></svg><span>0985516515</span></a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-details"><span class="contact-name">Nguyễn Đình Duẩn</span><span class="contact-title">Trưởng nhóm KD miền Trung</span></div>
+                        <a href="https://zalo.me/0943122885" class="contact-button"><svg><use xlink:href="#icon-zalo" /></svg><span>0943122885</span></a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-details"><span class="contact-name">Nguyễn Phúc Linh</span><span class="contact-title">Phó GĐ KD</span></div>
+                        <a href="https://zalo.me/0966669323" class="contact-button"><svg><use xlink:href="#icon-zalo" /></svg><span>0966669323</span></a>
+                    </div>
+                    
+                    <h3 class="contact-group-header">Hỗ trợ Xe 2</h3>
+                    <div class="contact-item">
+                        <div class="contact-details"><span class="contact-name">HDV Trương Hoàng Hải (Xe 2)</span><span class="contact-title">Zalo/Viber</span></div>
+                        <a href="https://zalo.me/0916836599" class="contact-button"><svg><use xlink:href="#icon-zalo" /></svg><span>0916836599</span></a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-details"><span class="contact-name">Phạm Thanh Sơn</span><span class="contact-title">Nhân viên KD miền Bắc</span></div>
+                        <a href="https://zalo.me/0973903904" class="contact-button"><svg><use xlink:href="#icon-zalo" /></svg><span>0973903904</span></a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-details"><span class="contact-name">Vương Mạnh Đạt</span><span class="contact-title">Nhân viên KD miền Bắc</span></div>
+                        <a href="https://zalo.me/0343618998" class="contact-button"><svg><use xlink:href="#icon-zalo" /></svg><span>0343618998</span></a>
+                    </div>
+                    
+                    <h3 class="contact-group-header">Hỗ trợ Xe 3</h3>
+                     <div class="contact-item">
+                        <div class="contact-details"><span class="contact-name">HDV Nguyễn Lâm Thắng (Xe 3)</span><span class="contact-title">Zalo/Viber</span></div>
+                        <a href="https://zalo.me/0913839083" class="contact-button"><svg><use xlink:href="#icon-zalo" /></svg><span>0913839083</span></a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-details"><span class="contact-name">Nguyễn Thanh Sơn</span><span class="contact-title">Trưởng nhóm KD miền Bắc</span></div>
+                        <a href="https://zalo.me/0943663968" class="contact-button"><svg><use xlink:href="#icon-zalo" /></svg><span>0943663968</span></a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-details"><span class="contact-name">Hoàng Trung Phong</span><span class="contact-title">Giám đốc Kinh Doanh</span></div>
+                        <a href="https://zalo.me/0986969160" class="contact-button"><svg><use xlink:href="#icon-zalo" /></svg><span>0986969160</span></a>
+                    </div>
+                    
+                    <h3 class="contact-group-header">Hỗ trợ Y Tế</h3>
+                    <div class="contact-item">
+                        <div class="contact-details"><span class="contact-name">Đỗ Thị Chúc</span><span class="contact-title">Trưởng nhóm Admin - P. Kinh Doanh</span></div>
+                        <a href="https://zalo.me/0862141090" class="contact-button"><svg><use xlink:href="#icon-zalo" /></svg><span>0862141090</span></a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-details"><span class="contact-name">Nguyễn Hồng Thủy</span><span class="contact-title">Phó phòng Nhân sự</span></div>
+                        <a href="https://zalo.me/0942026025" class="contact-button"><svg><use xlink:href="#icon-zalo" /></svg><span>0942026025</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="notes" class="section">
+            <h2 class="section-header section-toggle is-open" onclick="toggleSection(this)"><span>Lưu Ý Quan Trọng</span><span class="section-toggle-icon">−</span></h2>
+            <div class="section-content">
+                <h3 class="section-header-alt">Thông Tin Chung Chuyến Đi</h3>
+                <ul>
+                    <li><strong>Thời gian:</strong> 06 ngày 05 đêm, từ 14/11/2025 đến 19/11/2025.</li>
+                    <li><strong>Hãng hàng không:</strong> Vietnam Airlines.</li>
+                    <li><strong>Hành trình bay:</strong>
+                        <ul>
+                            <li>1. Hà Nội - Busan (15/11): VN428 (00h30 - 06h10).</li>
+                            <li>2. Seoul - Hà Nội (19/11): VN 415 (18h05 - 20h55).</li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="https://www.google.com/search?q=VN428+status" target="_blank" class="action-button" style="margin-right: 10px;">Check Chuyến Đi (VN428)</a>
+<a href="https://www.google.com/search?q=VN415+status" target="_blank" class="action-button">Check Chuyến Về (VN415)</a>
+                <h3 class="section-header-alt">Thủ Tục & Hành Lý</h3>
+                <ul>
+                    <li class="important-note"><svg class="icon-warning"><use xlink:href="#icon-warning" /></svg><strong>Mang theo đúng hộ chiếu đã đăng ký làm visa với đoàn.</strong></li>
+                    <li><strong>Hành lý xách tay:</strong> 01 kiện, tối đa 12kg.</li>
+                    <li><strong>Hành lý ký gửi:</strong> 01 kiện, tối đa 23 kg.</li>
+                    <li class="important-note"><svg class="icon-warning"><use xlink:href="#icon-warning" /></svg><strong>Pin dự phòng:</strong> Dung lượng < 20.000 mAh (Công suất < 100Wh). <strong>PHẢI để trong hành lý xách tay.</strong></li>
+                </ul>
+                
+                <h3 class="section-header-alt">Nhập Cảnh Hàn Quốc</h3>
+                <ul>
+                    <li><strong>Tiền mặt:</strong> Không đem theo quá 5,000 USD.</li>
+                    <li><strong>CẤM:</strong> Mang hoàn toàn các loại thịt tươi sống, trái cây, rau củ (tươi/khô).</li>
+                    <li><strong>Đặc biệt cấm:</strong> Các sản phẩm làm từ thịt lợn (ruốc, chà bông, lạp xưởng...).</li>
+                </ul>
+
+                <h3 class="section-header-alt">Liên Hệ Khẩn Cấp (Tại Hàn Quốc)</h3>
+                <table class="styled-table">
+                    <thead>
+                        <tr><th style="width: 25%;">Số ĐT</th><th>Cơ Quan</th><th>Chức năng</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>112</strong></td><td>Cảnh sát</td><td>Gọi khi bị mất cắp, gặp sự cố an ninh hoặc vấn đề hình sự.</td></tr>
+                        <tr><td><strong>119</strong></td><td>Cứu hỏa & Cấp cứu</td><td>Gọi khi có hỏa hoạn hoặc cần xe cứu thương khẩn cấp.</td></tr>
+                        <tr><td><strong>1330</strong></td><td>Tổng đài Du lịch</td><td>Hỗ trợ đa ngôn ngữ (có tiếng Việt) 24/7 về mọi thông tin du lịch.</td></tr>
+                    </tbody>
+                </table>
+                <p style="margin-top: 15px;">
+                    <strong class="important-note"><svg class="icon-warning"><use xlink:href="#icon-warning" /></svg> Mẹo phiên dịch 1330:</strong>
+                    Trong trường hợp khẩn cấp, bạn có thể gọi 1330 và yêu cầu <strong>cuộc gọi ba bên (three-way-call)</strong>. Nhân viên 1330 sẽ giúp bạn phiên dịch trực tiếp với cảnh sát (112) hoặc nhân viên y tế (119).
+                </p>
+
+                <h3 class="section-header-alt">Đại Sứ Quán Việt Nam tại Hàn Quốc</h3>
+                <p>Liên hệ ngay trong trường hợp mất hộ chiếu hoặc các vấn đề nghiêm trọng về lãnh sự.</p>
+                <ul>
+                    <li><strong>Địa chỉ:</strong> 28-58, Samcheong-dong, Jongno-gu, Seoul.</li>
+                    <li><strong>Điện thoại:</strong> +82-2-7392065.</li>
+                </ul>
+
+               <h3 class="section-header-alt">Thông Tin Hữu Ích</h3>
+<ul>
+    <li>
+        <strong>Thời tiết:</strong> Trung bình 10 - 19°C, đêm có thể xuống 5°C. Trời hanh khô.
+        <br>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px;">
+            <a href="https://www.google.com/search?q=my+current+weather" target="_blank" class="action-button">Xem tại Điểm hiện tại</a>
+            <a href="https://www.google.com/search?q=weather+in+Seoul" target="_blank" class="action-button">Seoul</a>
+            <a href="https://www.google.com/search?q=weather+in+Busan" target="_blank" class="action-button">Busan</a>
+            <a href="https://www.google.com/search?q=weather+in+Nami+Island" target="_blank" class="action-button">Đảo Nami</a>
+        </div>
+    </li>
+    <li>
+        <strong>Tỷ giá:</strong> 1,000 KRW (won) ≈ 18,289 VNĐ.
+        <br><a href="https://www.google.com/search?q=1000+krw+to+vnd" target="_blank" class="action-button">Xem Tỷ Giá (Google)</a>
+    </li>
+    <li><strong>Đồ dùng:</strong> Mang quần áo ấm, kem/son dưỡng ẩm, bàn chải & kem đánh răng (KS không cấp), đầu chuyển đổi (ổ cắm chân tròn là ổ cắm tiêu chuẩn tại HQ).</li>
+    <li>
+        <strong>Apps:</strong>
+        <span style="display: block; font-size: 0.9rem; color: var(--mau-chu-phu); margin-top: 4px; margin-bottom: 8px;">Ứng dụng điện thoại hữu ích tại nội địa hàn</span>
+        <ul class="app-list">
+            <li class="app-item">
+                <span>Kakao Map (Bản đồ)</span>
+                <div class="app-buttons">
+                    <a href="https://apps.apple.com/us/app/kakaomap-korea-no-1-map/id304608425" target="_blank">iOS</a>
+                    <a href="https://play.google.com/store/apps/details?id=net.daum.android.map" target="_blank">Android</a>
+                </div>
+            </li>
+             <li class="app-item">
+                <span>Papago (Dịch thuật)</span>
+                <div class="app-buttons">
+                    <a href="https://apps.apple.com/us/app/naver-papago-ai-translator/id1147874819" target="_blank">iOS</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.naver.labs.translator" target="_blank">Android</a>
+                </div>
+            </li>
+            <li class="app-item">
+                <span>Kakao T (Taxi)</span>
+                <div class="app-buttons">
+                    <a href="https://apps.apple.com/us/app/kakao-t/id981110422" target="_blank">iOS</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.kakao.taxi" target="_blank">Android</a>
+                </div>
+            </li>
+            <li class="app-item">
+                <span>K.Ride (Taxi/Tàu)</span>
+                <div class="app-buttons">
+                    <a href="https://apps.apple.com/us/app/k-ride-taxi-cab-travel/id6474654222" target="_blank">iOS</a>
+                    <a href="https://play.google.com/store/apps/details?id=com.kakaomobility.kride" target="_blank">Android</a>
+                </div>
+            </li>
+        </ul>
+    </li>
+</ul>
+            </div>
+        </section>
+
+        <section id="schedule" class="section">
+            <h2 class="section-header section-toggle is-open" onclick="toggleSection(this)"><span>Lịch Trình Chi Tiết</span><span class="section-toggle-icon">−</span></h2>
+            <div class="section-content">
+                <table class="styled-table">
+                    <thead>
+                        <tr><th style="width: 30%;">Thời gian</th><th>Nội dung</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr class="day-header"><td colspan="2">Ngày 1 - 14/11/2025 (Thứ Sáu)</td></tr>
+                        <tr><td>19h00 - 19h30</td><td>Tập trung tại Nhà máy Xe đạp Thống Nhất để di chuyển ra sân bay.<br><small>(Quý khách tự túc: vui lòng có mặt 21h30 tại Sân bay Nội Bài)</small></td></tr>
+                        <tr><td>19h30 - 20h45</td><td>Ăn tối tại Phở Lý Quốc Sư - Số 10 Võ Chí Công <small>(Đối với khách đi theo xe đoàn)</small></td></tr>
+                        <tr><td>20h45 - 24h00</td><td>Di chuyển ra sân bay và làm thủ tục</td></tr>
+                        <tr><td>00h30 (15/11)</td><td>Máy bay cất cánh (Hà Nội - Busan)</td></tr>
+
+                        <tr class="day-header"><td colspan="2">Ngày 2 - 15/11/2025 (Thứ Bảy)</td></tr>
+                        <tr><td>06h10 - 07h30</td><td>Hạ cánh Sân bay Quốc tế Kimhae và làm thủ tục nhập cảnh</td></tr>
+                        <tr><td>07h30 - 08h30</td><td>Ăn sáng (Canh sườn bò)</td></tr>
+                        <tr><td>08h30 - 11h00</td><td>Tham quan Làng văn hóa Gamcheon</td></tr>
+                        <tr><td>11h00 - 12h00</td><td>Đi Tàu ray Haeundae Blueline - ngắm cảnh biển</td></tr>
+                        <tr><td>12h00 - 13h30</td><td>Ăn trưa tại nhà hàng Namhae Seafood Stew</td></tr>
+                        <tr><td>13h30 - 14h30</td><td>Tham quan Đền Haedong Yonggungsa</td></tr>
+                        <tr><td>14h30 - 16h30</td><td>Trải nghiệm tắm hơi (Jimjilbang)</td></tr>
+                        <tr><td>16h30 - 18h00</td><td>Tham quan Chợ cá Jagalchi</td></tr>
+                        <tr><td>18h00 - 20h00</td><td>Ăn tối tại nhà hàng Mangpo heaundea</td></tr>
+                        <tr><td>20h00</td><td>Di chuyển về khách sạn tại Busan</td></tr>
+
+                        <tr class="day-header"><td colspan="2">Ngày 3 - 16/11/2025 (Chủ Nhật)</td></tr>
+                        <tr><td>06h30 - 07h45</td><td>Ăn sáng (tại khách sạn)</td></tr>
+                        <tr><td>07h45 - 08h00</td><td>Trả phòng</td></tr>
+                        <tr><td>08h00 - 08h45</td><td>Di chuyển đến Ga tàu đi Seoul</td></tr>
+                        <tr><td>08h45 - 11h00</td><td>Di chuyển Busan - Seoul (Tàu KTX)<br><small>(Xe 1: 9h05-11h49 | Xe 2: 9h37-12h15 | Xe 3: 9h26-11h53)</small></td></tr>
+                        <tr><td>11h00 - 11h20</td><td>Di chuyển tới nhà hàng</td></tr>
+                        <tr><td>11h20 - 12h30</td><td>Ăn trưa (Shabu Shabu Hotpot)</td></tr>
+                        <tr><td>12h30 - 14h30</td><td>Di chuyển tới đảo Nami</td></tr>
+                        <tr><td>14h30 - 17h30</td><td>Tham quan đảo Nami</td></tr>
+                        <tr><td>17h30 - 18h30</td><td>Di chuyển về nhà hàng</td></tr>
+                        <tr><td>18h30 - 20h00</td><td>Ăn tối (Gà nướng)</td></tr>
+                        <tr><td>20h00</td><td>Di chuyển về khách sạn tại Seoul</td></tr>
+
+                        <tr class="day-header"><td colspan="2">Ngày 4 - 17/11/2025 (Thứ Hai)</td></tr>
+                        <tr><td>06h00 - 07h00</td><td>Ăn sáng (tại khách sạn)</td></tr>
+                        <tr><td>08h30 - 10h30</td><td>Tham quan mua sắm tại Trung tâm nhân sâm, Cửa hàng mỹ phẩm</td></tr>
+                        <tr><td>10h30 - 12h00</td><td>Trải nghiệm mặc trang phục Hanbok và làm kim chi</td></tr>
+                        <tr><td>12h00 - 13h30</td><td>Ăn trưa (Gà hầm sâm)</td></tr>
+                        <tr><td>13h30 - 17h00</td><td>Tham quan Công viên Everland</td></tr>
+                        <tr><td>17h00 - 18h00</td><td>Di chuyển tới nhà hàng</td></tr>
+                        <tr><td>18h00 - 19h30</td><td>Ăn tối tại nhà hàng</td></tr>
+                        <tr><td>19h30 - 21h00</td><td>Trải nghiệm mua sắm tại chợ Myeongdong</td></tr>
+                        <tr><td>21h00</td><td>Nghỉ đêm tại khách sạn Seoul</td></tr>
+
+                        <tr class="day-header"><td colspan="2">Ngày 5 - 18/11/2025 (Thứ Ba)</td></tr>
+                        <tr><td>06h00 - 07h00</td><td>Ăn sáng (tại khách sạn)</td></tr>
+                        <tr><td>08h30 - 11h30</td><td>Tham quan mua sắm tại cửa hàng miễn thuế (tinh dầu, nông trại)</td></tr>
+                        <tr><td>11h30 - 12h30</td><td>Ăn trưa tại nhà hàng</td></tr>
+                        <tr><td>12h30 - 15h00</td><td>Tham quan Cung điện Gyeongbok & Bảo Tàng dân gian Seoul</td></tr>
+                        <tr><td>15h00 - 15h15</td><td>Tham quan Nhà Xanh - Dinh Tổng Thống (chụp ảnh bên ngoài)</td></tr>
+                        <tr><td>15h15 - 16h00</td><td>Di chuyển về khách sạn chuẩn bị cho tối dự Gala</td></tr>
+                        <tr><td>16h00 - 17h40</td><td>Nghỉ ngơi, chuẩn bị tham dự Gala</td></tr>
+                        <tr><td>17h40 - 18h20</td><td>Di chuyển tới Trung tâm hội nghị K-Turtle</td></tr>
+                        <tr><td>18h30 - 21h00</td><td>Tiệc Gala</td></tr>
+
+                        <tr class="day-header"><td colspan="2">Ngày 6 - 19/11/2025 (Thứ Tư)</td></tr>
+                        <tr><td>06h30 - 08h00</td><td>Ăn sáng (tại khách sạn)</td></tr>
+                        <tr><td>08h30 - 10h00</td><td>Đoàn tham quan Thư viện Starfield Seoul</td></tr>
+                        <tr><td>10h00 - 10h30</td><td>Tham quan Tháp Namsan Seoul (không bao gồm vé lên tháp)</td></tr>
+                        <tr><td>10h30 - 11h00</td><td>Tham quan Trường Đại học Yosei</td></tr>
+                        <tr><td>11h00 - 12h00</td><td>Mua sắm tại Cửa hàng quà lưu niệm</td></tr>
+                        <tr><td>12h00 - 13h30</td><td>Ăn trưa</td></tr>
+                        <tr><td>13h30 - 14h30</td><td>Di chuyển ra Sân bay Quốc tế Incheon</td></tr>
+                        <tr><td>14h30 - 18h00</td><td>Làm thủ tục tại Sân bay</td></tr>
+                        <tr><td>18h05 - 20h55</td><td>Máy bay cất cánh (Seoul - Hà Nội)</td></tr>
+                        <tr><td>20h55 - 22h00</td><td>Đến sân bay Nội Bài, làm thủ tục nhập cảnh</td></tr>
+                    </tbody>
+                </table>
+                <p><i>*Lịch trình, thời gian có thể thay đổi tùy thuộc vào tình hình thực tế.</i></p>
+            </div>
+        </section>
+
+<section id="locations" class="section">
+    <h2 class="section-toggle is-open" onclick="toggleSection(this)">
+        <span>Địa Điểm Tham Quan Nổi Bật</span>
+        <span class="section-toggle-icon">−</span>
+    </h2>
+    <div class="section-content">
+        
+        <h3 style="margin-top:0;">Thông Tin Chung Khu Vực</h3>
+        <div class="location-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+            
+            <div class="location-card" style="min-height: 250px;">
+                <div class="card-content">
+                    <h3>🇰🇷 Hàn Quốc (Tổng Quan)</h3>
+                    <p class="card-description">
+                        Đại Hàn Dân Quốc, diện tích 99.392 km², dân số ~49.77 triệu người. Thủ đô Seoul. Nổi tiếng với nền văn hóa truyền thống, làn sóng giải trí **K-Pop** và công nghệ hiện đại. Quốc khánh: 15/8/1948.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="location-card" style="min-height: 250px;">
+                <div class="card-content">
+                    <h3>🏙️ Seoul (Thủ đô)</h3>
+                    <p class="card-description">
+                        Thủ đô và là trung tâm chính trị, kinh tế, văn hóa sôi động bậc nhất Châu Á trong hơn 600 năm. Là siêu đô thị kết hợp các di sản triều đại Joseon (Gangbuk) với kiến trúc hiện đại (Gangnam).
+                    </p>
+                </div>
+            </div>
+
+            <div class="location-card" style="min-height: 250px;">
+                <div class="card-content">
+                    <h3>🌊 Busan (Thành phố Cảng)</h3>
+                    <p class="card-description">
+                        Thành phố lớn thứ hai Hàn Quốc. Đóng vai trò là cảng biển lớn nhất. Trung tâm kinh tế, du lịch miền Nam Hàn Quốc, nổi tiếng với bãi biển và hải sản tươi ngon.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="margin-top:30px;">Địa Điểm Tham Quan Cụ Thể</h3>
+        <div class="location-grid">
+            
+            <div class="location-card">
+                <img src="images/Gamcheon_thumb.jpg" alt="Làng văn hóa Gamcheon">
+                <div class="card-content">
+                    <h3>Làng văn hóa Gamcheon</h3>
+                    <p class="card-description">
+                        <strong>Đặc điểm:</strong> Khu phố được tái thiết sau Chiến tranh Triều Tiên, nổi tiếng với những ngôi nhà bậc thang đầy màu sắc và nghệ thuật đường phố. Mệnh danh là **'Santorini của Busan'**.<br>
+                        <strong>Lịch trình:</strong> Ngày 2
+                    </p>
+                    <button class="map-button" onclick="showMapChoice('Gamcheon Culture Village', '35.097, 129.010')">📍 Chỉ đường</button>
+                </div>
+            </div>
+
+            <div class="location-card">
+                <img src="images/Haeundae_Blueline_thumb.jpg" alt="Tàu ray Haeundae Blueline">
+                <div class="card-content">
+                    <h3>🚟 Tàu Haeundae Blueline</h3>
+                    <p class="card-description">
+                        <strong>Trải nghiệm:</strong> Tuyến tàu ngắm cảnh dọc bờ biển Haeundae trên nền đường sắt cũ. Cung cấp tầm nhìn tuyệt đẹp ra biển.<br>
+                        <strong>Hoạt động:</strong> Trải nghiệm Tàu **Sky Capsule** hoặc **Beach Train**. **(Lịch trình: Ngày 2)**
+                    </p>
+                    <button class="map-button" onclick="showMapChoice('Haeundae Blueline', '35.158, 129.179')">📍 Chỉ đường</button>
+                </div>
+            </div>
+            
+            <div class="location-card">
+                <img src="images/Yonggungsa_thumb.jpg" alt="Đền Haedong Yonggungsa">
+                <div class="card-content">
+                    <h3>⛩️ Đền Haedong Yonggungsa</h3>
+                    <p class="card-description">
+                        <strong>Lịch sử:</strong> Ngôi đền Phật giáo hiếm hoi xây dựng ven biển (năm 1376), mang kiến trúc độc đáo, hướng ra Biển Đông.<br>
+                        <strong>Lịch trình:</strong> Ngày 2
+                    </p>
+                    <button class="map-button" onclick="showMapChoice('Haedong Yonggungsa Temple', '35.216, 129.214')">📍 Chỉ đường</button>
+                </div>
+            </div>
+
+            <div class="location-card">
+                <img src="images/Jagalchi_thumb.jpg" alt="Chợ cá Jagalchi">
+                <div class="card-content">
+                    <h3>🐟 Chợ cá Jagalchi</h3>
+                    <p class="card-description">
+                        <strong>Đặc điểm:</strong> Chợ hải sản lớn nhất và nổi tiếng nhất Hàn Quốc. Cho phép khách **chọn hải sản sống để chế biến tại chỗ**.<br>
+                        <strong>Lịch trình:</strong> Ngày 2
+                    </p>
+                    <button class="map-button" onclick="showMapChoice('Jagalchi Market', '35.0945, 129.032')">📍 Chỉ đường</button>
+                </div>
+            </div>
+
+            <div class="location-card">
+                <img src="images/Nami_thumb.jpg" alt="Đảo Nami">
+                <div class="card-content">
+                    <h3>Đảo Nami (Namiseom)</h3>
+                    <p class="card-description">
+                        <strong>Văn hóa:</strong> Hòn đảo hình bán nguyệt, nổi tiếng toàn cầu sau khi là bối cảnh chính của phim truyền hình **"Bản tình ca mùa đông"**.<br>
+                        <strong>Hoạt động:</strong> Chụp ảnh tại Con đường cây Ngân Hạnh và Thông lá kim lãng mạn.
+                    </p>
+                    <button class="map-button" onclick="showMapChoice('Nami Island', '37.805, 127.525')">📍 Chỉ đường</button>
+                </div>
+            </div>
+            
+            <div class="location-card">
+                <img src="images/Everland_thumb.jpg" alt="Công viên Everland">
+                <div class="card-content">
+                    <h3>🎠 Công viên Everland</h3>
+                    <p class="card-description">
+                        <strong>Đặc điểm:</strong> Công viên giải trí lớn nhất Hàn Quốc, nổi tiếng với tàu lượn siêu tốc bằng gỗ **T-Express** và khu vực **Safari World**.<br>
+                        <strong>Lịch trình:</strong> Ngày 4
+                    </p>
+                    <button class="map-button" onclick="showMapChoice('Everland, 199 Everland-ro, Pogok-eup, Cheoin-gu, Yongin-si, Gyeonggi-do, South Korea', '37.293, 127.201')">📍 Chỉ đường</button>
+                </div>
+            </div>
+
+            <div class="location-card">
+                <img src="images/Gyeongbokgung_thumb.jpg" alt="Cung điện Gyeongbokgung">
+                <div class="card-content">
+                    <h3>Cung điện Gyeongbokgung</h3>
+                    <p class="card-description">
+                        <strong>Lịch sử:</strong> Cung điện Hoàng gia lớn nhất triều đại Joseon (xây năm 1395). Biểu tượng quyền lực và văn hóa.<br>
+                        <strong>Hoạt động:</strong> Mặc **Hanbok** (được miễn phí vé), xem **Lễ đổi gác Hoàng cung**. **(Lịch trình: Ngày 5)**
+                    </p>
+                    <button class="map-button" onclick="showMapChoice('Gyeongbokgung Palace', '37.5796, 126.9770')">📍 Chỉ đường</button>
+                </div>
+            </div>
+
+            <div class="location-card">
+                <img src="images/Fork_Museum_Seoul_thumb.jpg" alt="Bảo tàng Dân gian Quốc gia">
+                <div class="card-content">
+                    <h3>🏛️ Bảo tàng Dân gian Quốc gia</h3>
+                    <p class="card-description">
+                        <strong>Lịch sử:</strong> Nằm trong khuôn viên Gyeongbokgung. Trưng bày hơn 98.000 hiện vật tái hiện đời sống người Hàn từ cổ đại đến hiện đại.<br>
+                        <strong>Lịch trình:</strong> Ngày 5
+                    </p>
+                    <button class="map-button" onclick="showMapChoice('The National Folk Museum of Korea', '37.5804, 126.9780')">📍 Chỉ đường</button>
+                </div>
+            </div>
+
+            <div class="location-card">
+                <img src="images/Starfield_Library_thumb.jpg" alt="Thư viện Starfield">
+                <div class="card-content">
+                    <h3>📚 Thư viện Starfield Seoul</h3>
+                    <p class="card-description">
+                        <strong>Kiến trúc:</strong> Nằm trong COEX Mall (Gangnam). Nổi bật với **ba kệ sách khổng lồ cao 13 mét**.<br>
+                        <strong>Hoạt động:</strong> Địa điểm check-in "sống ảo" nổi tiếng.
+                    </p>
+                    <button class="map-button" onclick="showMapChoice('Starfield Library', '37.5135, 127.0565')">📍 Chỉ đường</button>
+                </div>
+            </div>
+
+            <div class="location-card">
+                <img src="images/Yonsei_thumb.jpg" alt="Đại học Yonsei">
+                <div class="card-content">
+                    <h3>🎓 Trường Đại học Yonsei</h3>
+                    <p class="card-description">
+                        <strong>Danh tiếng:</strong> Một trong ba trường đại học danh giá nhất Hàn Quốc (**TOP SKY**), thành lập năm 1885. Nổi tiếng với khuôn viên cổ kính, kiến trúc Gothic.<br>
+                        <strong>Hoạt động:</strong> Tham quan khuôn viên trường, đặc biệt là **Tòa nhà Underwood**.
+                    </p>
+                    <button class="map-button" onclick="showMapChoice('Yonsei University, Sinchon Campus', '37.5658, 126.9385')">📍 Chỉ đường</button>
+                </div>
+            </div>
+            
+            <div class="location-card">
+                <img src="images/Jimjibang_thumb_2.jpg" alt="Jimjilbang (Tắm hơi công cộng)">
+                <div class="card-content">
+                    <h3>🧖 Trải nghiệm Jimjilbang</h3>
+                    <p class="card-description">
+                        <strong>Trải nghiệm:</strong> Tắm hơi công cộng là văn hóa độc đáo của người Hàn Quốc, kết hợp thư giãn và giao lưu cộng đồng.<br>
+                        <strong>Nên thử:</strong> Trứng luộc (Maekban-seok Gyelan) và Nước gạo ngọt (Sikhye).
+                    </p>
+                    <button class="map-button" onclick="showMapChoice('Siloam Spa', '37.555, 126.969')">📍 Chỉ đường</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+        <section id="hanbok" class="section">
+            <h2 class="section-header section-toggle is-open" onclick="toggleSection(this)"><span>Trang Phục Hanbok</span><span class="section-toggle-icon">−</span></h2>
+            <div class="section-content">
+                <div class="hanbok-item">
+                    <h3>1. Trang phục Hoàng gia</h3>
+                    <p>Trang phục của Hoàng gia được may bằng chất liệu cao cấp và thêu các biểu tượng quyền lực.</p>
+                    <table class="styled-table">
+                        <thead>
+                            <tr><th>Chức vụ</th><th>Trang phục (Thường phục/Hàng ngày)</th><th>Lễ phục</th><th>Dấu hiệu/Biểu tượng chính</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Nhà vua</td><td>Gollyongpo (Áo choàng Rồng), thường màu đỏ hoặc xanh lam.</td><td>Myeonbok (lễ phục cao nhất).</td><td>Huy hiệu rồng năm móng trên ngực, lưng và vai; đội vương miện đặc biệt.</td></tr>
+                            <tr><td>Hoàng hậu</td><td>Hanbok cung đình thông thường với màu sắc rực rỡ.</td><td>Jeokui (áo choàng thêu họa tiết chim trĩ).</td><td>Họa tiết phượng hoàng và thêu chim trĩ ngũ sắc.</td></tr>
+                            <tr><td>Hoàng thái hậu</td><td>Hwangwonsam (áo choàng lễ màu vàng).</td><td>Hwangwonsam</td><td>Màu vàng với họa tiết rồng.</td></tr>
+                            <tr><td>Công chúa</td><td>Hanbok cung đình thông thường.</td><td>Nokwonsam (áo choàng lễ màu xanh lá cây).</td><td>Màu xanh lá cây với họa tiết hoa hoặc đôi khi chim trĩ.</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="gallery-grid">
+                        <img src="images/Hanbok_Vua_thumb.jpg" alt="Hanbok Vua" class="thumbnail" data-full="images/Hanbok_Vua_full.jpg">
+                        <img src="images/Hanbok_PhiTan_thumb.jpg" alt="Hanbok Phi tần" class="thumbnail" data-full="images/Hanbok_PhiTan_full.jpg">
+                        <img src="images/Hanbok_ThaiHau_thumb.jpg" alt="Hanbok Thái hậu" class="thumbnail" data-full="images/Hanbok_ThaiHau_full.jpg">
+                        <img src="images/Hanbok_CongChua_thumb.jpg" alt="Hanbok Công chúa" class="thumbnail" data-full="images/Hanbok_CongChua_full.jpg">
+                    </div>
+                </div>
+                <div class="hanbok-item">
+                    <h3>2. Trang phục Quan chức</h3>
+                    <p>Trang phục của Quan chức (Yangban) thể hiện cấp bậc qua màu sắc và huy hiệu (Boseung) thêu trên ngực/lưng.</p>
+                    <table class="styled-table">
+                        <thead>
+                            <tr><th>Phẩm cấp</th><th>Trang phục</th><th>Dấu hiệu/Đặc điểm</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Quan Văn Cấp cao (1-3)</td><td>Áo choàng màu Đỏ.</td><td>Thêu hình Cò hoặc Phượng Hoàng (cho Văn Quan).</td></tr>
+                            <tr><td>Quan Võ Cấp cao (1-3)</td><td>Áo choàng màu Đỏ.</td><td>Thêu hình Hổ hoặc Sư Tử (cho Võ Quan).</td></tr>
+                            <tr><td>Quan cấp thấp (4-9)</td><td>Áo choàng màu Xanh lam (Cấp 4-6) hoặc Xanh lục (Cấp 7-9).</td><td>Huy hiệu nhỏ hơn, ít chi tiết hơn.</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="gallery-grid">
+                        <img src="images/Hanbok_QuanChuc_thumb.jpg" alt="Hanbok Quan chức" class="thumbnail" data-full="images/Hanbok_QuanChuc_full.jpg">
+                    </div>
+                </div>
+                <div class="hanbok-item">
+                    <h3>3. Trang phục Người hầu (Cung nữ, Thái giám, Lính canh)</h3>
+                    <p>Trang phục của Người hầu thay đổi dựa trên vai trò và thâm niên.</p>
+                    <table class="styled-table">
+                        <thead>
+                            <tr><th>Vị trí/Vai trò</th><th>Trang phục Chính</th><th>Đặc điểm</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Cung nữ (Gungnyeo)</td><td>Jeogori (áo khoác) và Chima (váy) màu sắc trơn, vải bền.</td><td>Kiểu tóc búi cao hoặc tết gọn gàng, không dùng trâm cài cầu kỳ.</td></tr>
+                            <tr><td>Thái giám</td><td>Jeogori và Baji (quần rộng) màu sắc nhạt, trung tính (xanh lam, xám nhạt).</td><td>Tránh các màu rực rỡ của hoàng gia. Chất liệu đơn giản.</td></tr>
+                            <tr><td>Lính gác cổng (Sumungun)</td><td>Cheollik (áo khoác xẻ tà) màu đỏ hoặc vàng.</td><td>Thiết kế gọn gàng để thuận tiện di chuyển. Đội mũ quân sự chuyên dụng.</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="gallery-grid">
+                        <img src="images/Hanbok_CungNu_thumb.jpg" alt="Hanbok Cung nữ" class="thumbnail" data-full="images/Hanbok_CungNu_full.jpg">
+                        <img src="images/Hanbok_ThaiGiam_thumb.jpg" alt="Hanbok Thái giám" class="thumbnail" data-full="images/Hanbok_ThaiGiam_full.jpg">
+                        <img src="images/Hanbok_LinhCanh_thumb.jpg" alt="Hanbok Lính canh" class="thumbnail" data-full="images/Hanbok_LinhCanh_full.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="section">
+            <h2 class="section-header section-toggle is-open" onclick="toggleSection(this)"><span>Menu Đồ Ăn (Dự Kiến)</span><span class="section-toggle-icon">−</span></h2>
+            <div class="section-content">
+                <div class="menu-item">
+                    <h3>Ngày 2 (15/11)</h3>
+                    <ul><li><strong>Sáng:</strong> Ăn Canh sườn bò.</li><li><strong>Trưa:</strong> Ăn Seafood Soup tại Namhae seafood stew.</li><li><strong>Tối:</strong> Ăn Bulgogi tại Mangpo heaundea Restaurant.</li></ul>
+                    <div class="gallery-grid">
+                        <img src="images/Menu_CanhSuonBo_thumb.jpg" alt="Canh sườn bò" class="thumbnail" data-full="images/Menu_CanhSuonBo_full.jpg">
+                        <img src="images/Menu_LauHaiSan_thumb.jpg" alt="Lẩu Hải sản" class="thumbnail" data-full="images/Menu_LauHaiSan_full.jpg">
+                        <img src="images/Menu_Bulgogi_thumb.jpg" alt="Bulgogi" class="thumbnail" data-full="images/Menu_Bulgogi_full.jpg">
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <h3>Ngày 3 (16/11)</h3>
+                    <ul><li><strong>Sáng:</strong> Tại khách sạn.</li><li><strong>Trưa:</strong> Ăn Lẩu Shabu Shabu.</li><li><strong>Tối:</strong> Ăn Gà nướng (Grill chicken).</li></ul>
+                    <div class="gallery-grid">
+                        <img src="images/Menu_ShabuShabu_thumb.jpg" alt="Shabu Shabu" class="thumbnail" data-full="images/Menu_ShabuShabu_full.jpg">
+                        <img src="images/Menu_GaNuong_thumb.jpg" alt="Gà nướng" class="thumbnail" data-full="images/Menu_GaNuong_full.jpg">
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <h3>Ngày 4 (17/11)</h3>
+                    <ul><li><strong>Sáng:</strong> Tại khách sạn.</li><li><strong>Trưa:</strong> Ăn Gà hầm sâm (Samgyetang) tại nhà hàng Jinho Samgyetang.</li><li><strong>Tối:</strong> Ăn tối tại nhà hàng.</li></ul>
+                    <div class="gallery-grid">
+                        <img src="images/Menu_Samgyetang_thumb.jpg" alt="Gà hầm sâm" class="thumbnail" data-full="images/Menu_Samgyetang_full.jpg">
+                        <img src="images/Menu_KoreanBBQ_thumb.jpg" alt="BBQ" class="thumbnail" data-full="images/Menu_KoreanBBQ_full.jpg">
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <h3>Ngày 5 (18/11)</h3>
+                    <ul><li><strong>Sáng:</strong> Tại khách sạn.</li><li><strong>Trưa:</strong> Ăn trưa tại nhà hàng.</li><li><strong>Tối:</strong> Tiệc Gala tại Trung tâm hội nghị K-Turtle.</li></ul>
+                    <div class="gallery-grid">
+                        <img src="images/Menu_Gala_thumb.jpg" alt="Tiệc Gala" class="thumbnail" data-full="images/Menu_Gala_full.jpg">
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <h3>Ngày 6 (19/11)</h3>
+                    <ul><li><strong>Sáng:</strong> Tại khách sạn.</li><li><strong>Trưa:</strong> Ăn trưa.</li></ul>
+                    <div class="gallery-grid">
+                        <img src="images/Menu_Hanjongsik_thumb.jpg" alt="Bữa trưa Hanjongsik" class="thumbnail" data-full="images/Menu_Hanjongsik_full.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lang" class="section">
+            <h2 class="section-header section-toggle is-open" onclick="toggleSection(this)">
+                <span>
+                    Giao Tiếp Tiếng Hàn Cơ Bản
+                    <div id="voice-note" style="font-size: 0.8rem; color: var(--mau-chu-phu); font-weight: 400; margin-top: 4px;">
+                        (Đang tải giọng nói...)
+                    </div>
+                </span>
+                <span class="section-toggle-icon">−</span>
+            </h2>
+            <div class="section-content">
+                <table class="styled-table">
+                    <thead>
+                        <tr><th colspan="4" class="lang-table-header">Chào hỏi & Tạm biệt</th></tr>
+                        <tr><th>Tiếng Việt</th><th>Tiếng Hàn</th><th>Phiên âm</th><th>Phát âm</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Xin chào</td><td>안녕하세요</td><td>An-nyong-ha-sê-yô</td><td><div class="play-button-container"><button class="play-button" data-text="안녕하세요"><svg><use xlink:href="#icon-play" /></svg></button></div></td></tr>
+                        <tr><td>Tạm biệt (Khi bạn đi)</td><td>안녕히 계세요</td><td>An-nyong-hi Kê-sê-yô</td><td><div class="play-button-container"><button class="play-button" data-text="안녕히 계세요"><svg><use xlink:href="#icon-play" /></svg></button></div></td></tr>
+                        <tr><td>Tạm biệt (Khi bạn ở lại)</td><td>안녕히 가세요</td><td>An-nyong-hi Ka-sê-yô</td><td><div class="play-button-container"><button class="play-button" data-text="안녕히 가세요"><svg><use xlink:href="#icon-play" /></svg></button></div></td></tr>
+                    </tbody>
+                    <thead>
+                        <tr><th colspan="4" class="lang-table-header">Cảm ơn & Xin lỗi</th></tr>
+                        <tr><th>Tiếng Việt</th><th>Tiếng Hàn</th><th>Phiên âm</th><th>Phát âm</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Cảm ơn</td><td>감사합니다</td><td>Kam-sa-ham-ni-tà</td><td><div class="play-button-container"><button class="play-button" data-text="감사합니다"><svg><use xlink:href="#icon-play" /></svg></button></div></td></tr>
+                        <tr><td>Xin lỗi (Khi có lỗi)</td><td>죄송합니다</td><td>Chuê-sông-ham-ni-tà</td><td><div class="play-button-container"><button class="play-button" data-text="죄송합니다"><svg><use xlink:href="#icon-play" /></svg></button></div></td></tr>
+                        <tr><td>Xin lỗi (Khi làm phiền)</td><td>실례합니다</td><td>Sil-lê-ham-ni-tà</td><td><div class="play-button-container"><button class="play-button" data-text="실례합니다"><svg><use xlink:href="#icon-play" /></svg></button></div></td></tr>
+                    </tbody>
+                    <thead>
+                        <tr><th colspan="4" class="lang-table-header">Giao tiếp cơ bản</th></tr>
+                        <tr><th>Tiếng Việt</th><th>Tiếng Hàn</th><th>Phiên âm</th><th>Phát âm</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Vâng / Đúng vậy</td><td>네</td><td>Nê</td><td><div class="play-button-container"><button class="play-button" data-text="네"><svg><use xlink:href="#icon-play" /></svg></button></div></td></tr>
+                        <tr><td>Không / Không phải</td><td>아니요</td><td>A-ni-yô</td><td><div class="play-button-container"><button class="play-button" data-text="아니요"><svg><use xlink:href="#icon-play" /></svg></button></div></td></tr>
+                        <tr><td>Tôi không hiểu</td><td>모르겠어요</td><td>Mô-rư-kệt-sò-yô</td><td><div class="play-button-container"><button class="play-button" data-text="모르겠어요"><svg><use xlink:href="#icon-play" /></svg></button></div></td></tr>
+                    </tbody>
+                    <thead>
+                        <tr><th colspan="4" class="lang-table-header">Mua sắm & Ăn uống</th></tr>
+                        <tr><th>Tiếng Việt</th><th>Tiếng Hàn</th><th>Phiên âm</th><th>Phát âm</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Cái này giá bao nhiêu?</td><td>이거 얼마예요?</td><td>I-ko / Ól-ma-yê-yô?</td><td><div class="play-button-container"><button class="play-button" data-text="이거 얼마예요?"><svg><use xlink:href="#icon-play" /></svg></button></div></td></tr>
+                        <tr><td>Cho tôi cái này</td><td>이거 주세요</td><td>I-ko / Chu-sê-yô</td><td><div class="play-button-container"><button class="play-button" data-text="이거 주세요"><svg><use xlink:href="#icon-play" /></svg></button></div></td></tr>
+                        <tr><td>Ngon quá!</td><td>맛있어요</td><td>Ma-sit-sò-yô</td><td><div class="play-button-container"><button class="play-button" data-text="맛있어요"><svg><use xlink:href="#icon-play" /></svg></button></div></td></tr>
+                        <tr><td>Cho tôi xin nước</td><td>물 주세요</td><td>Mul / Chu-sê-yô</td><td><div class="play-button-container"><button class="play-button" data-text="물 주세요"><svg><use xlink:href="#icon-play" /></svg></button></div></td></tr>
+                        <tr><td>Tính tiền, làm ơn</td><td>계산해 주세요</td><td>Kê-san-hê Chu-sê-yô</td><td><div class="play-button-container"><button class="play-button" data-text="계산해 주세요"><svg><use xlink:href="#icon-play" /></svg></button></div></td></tr>
+                    </tbody>
+                    <thead>
+                        <tr><th colspan="4" class="lang-table-header">Hỏi đường & Trợ giúp</th></tr>
+                        <tr><th>Tiếng Việt</th><th>Tiếng Hàn</th><th>Phiên âm</th><th>Phát âm</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>... ở đâu?</td><td>... 어디예요?</td><td>... O-ti-yê-yô?</td><td><div class="play-button-container"><button class="play-button" data-text="어디예요?"><svg><use xlink:href="#icon-play" /></svg></button></div></td></tr>
+                        <tr><td>Nhà vệ sinh ở đâu?</td><td>화장실 어디예요?</td><td>Hoa-trang-sil O-ti-yê-yô?</td><td><div class="play-button-container"><button class="play-button" data-text="화장실 어디예요?"><svg><use xlink:href="#icon-play" /></svg></button></div></td></tr>
+                        <tr><td>Ga tàu điện ngầm ở đâu?</td><td>지하철역 어디예요?</td><td>Chi-ha-chól-yók O-ti-yê-yô?</td><td><div class="play-button-container"><button class="play-button" data-text="지하철역 어디예요?"><svg><use xlink:href="#icon-play" /></svg></button></div></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer">Hội Nghị Khách Hàng Thống Nhất 2025</footer>
+
+    <div id="myLightbox" class="lightbox">
+        <span class="lightbox-close">×</span><img class="lightbox-content" id="lightboxImg">
+    </div>
+
+    <div id="map-choice-modal" class="map-modal-overlay">
+        <div class="map-modal-content">
+            <h3 id="map-choice-title">Chọn ứng dụng bản đồ</h3>
+            <button class="map-modal-button kakao" onclick="openMap('kakao')">Kakao Map</button>
+            <button class="map-modal-button google" onclick="openMap('google')">Google Maps</button>
+            <button class="map-modal-button naver" onclick="openMap('naver')">Naver Map</button>
+            <button class="map-modal-button close" onclick="hideMapChoice()">Đóng lại</button>
+        </div>
+    </div>
+<div id="map-choice-modal" class="map-modal-overlay">
+    <div class="map-modal-content">
+        <h3 id="map-choice-title">Chọn ứng dụng bản đồ</h3>
+        <button class="map-modal-button kakao" onclick="openMap('kakao')">Kakao Map</button>
+        <button class="map-modal-button google" onclick="openMap('google')">Google Maps</button>
+        <button class="map-modal-button naver" onclick="openMap('naver')">Naver Map</button>
+        <button class="map-modal-button close" onclick="hideMapChoice()">Đóng lại</button>
+    </div>
+</div>
+
+<script>
+    // --- LOGIC MAP CHOICE (Khôi phục) ---
+    let currentMapChoice = { name: '', coords: '' };
+
+    window.showMapChoice = function(locationName, coordinates) {
+        const modal = document.getElementById('map-choice-modal');
+        const title = document.getElementById('map-choice-title');
+        currentMapChoice.name = locationName;
+        currentMapChoice.coords = coordinates;
+        title.textContent = `Chỉ đường tới ${locationName}`;
+        modal.style.display = 'flex';
+    }
+
+    window.hideMapChoice = function() {
+        document.getElementById('map-choice-modal').style.display = 'none';
+    }
+
+    window.openMap = function(mapType) {
+        const { name, coords } = currentMapChoice;
+        if (!coords) return;
+        
+        const [lat, lon] = coords.split(',').map(s => s.trim());
+        let url = '';
+
+        switch (mapType) {
+            case 'google':
+                url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(name)}+@${lat},${lon}`;
+                break;
+            case 'kakao':
+                url = `https://map.kakao.com/link/to/${encodeURIComponent(name)},${lat},${lon}`;
+                break;
+            case 'naver':
+                url = `https://m.map.naver.com/directions/public.naver?dlevel=10&lat=${lat}&lon=${lon}&title=${encodeURIComponent(name)}`;
+                break;
+        }
+
+        if (url) {
+            window.open(url, '_blank');
+        }
+        
+        hideMapChoice();
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // --- 1. ACCORDION (Đóng/Mở Section) ---
+        window.toggleSection = function(headerElement) {
+            const content = headerElement.nextElementSibling;
+            const icon = headerElement.querySelector('.section-toggle-icon');
+            const isCurrentlyOpen = headerElement.classList.contains('is-open');
+
+            if (isCurrentlyOpen) {
+                headerElement.classList.remove('is-open');
+                content.style.maxHeight = null;
+                icon.textContent = '+';
+            } else {
+                headerElement.classList.add('is-open');
+                content.style.maxHeight = content.scrollHeight + 30 + "px"; 
+                icon.textContent = '−';
+            }
+        };
+
+        // Khởi tạo trạng thái mở mặc định (Mở mục Liên Hệ và Địa Điểm)
+        document.querySelectorAll('.section-toggle.is-open').forEach(header => {
+             const content = header.nextElementSibling;
+             setTimeout(() => {
+                if (content) {
+                   content.style.maxHeight = content.scrollHeight + 30 + "px";
+                }
+             }, 50);
+        });
+
+
+        // --- 2. TTS (Text-to-Speech) ---
+        const speech = window.speechSynthesis;
+        let voices = [];
+        const loadVoices = () => {
+            voices = speech.getVoices().filter(v => v.lang.includes('ko'));
+        };
+        // Tải giọng nói ngay khi có thể
+        if (speech.getVoices().length > 0) {
+            loadVoices();
+        }
+        speech.onvoiceschanged = loadVoices;
+
+        function playSpeech(text) {
+            if (speech.speaking) {
+                speech.cancel();
+            }
+            const utterance = new SpeechSynthesisUtterance(text);
+            
+            let koreanVoice = voices.find(v => v.lang === 'ko-KR');
+            if (!koreanVoice) {
+                koreanVoice = voices.find(v => v.lang.includes('ko'));
+            }
+
+            utterance.voice = koreanVoice;
+            utterance.lang = 'ko-KR';
+            utterance.rate = 0.9;
+            speech.speak(utterance);
+        }
+
+        document.querySelectorAll('.play-button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const text = this.dataset.text;
+                if (text) {
+                    playSpeech(text);
+                }
+            });
+        });
+
+        // --- 3. NAVIGATION & SCROLL ---
+        const navItems = document.querySelectorAll('#main-nav .nav-item');
+        navItems.forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                navItems.forEach(nav => nav.classList.remove('active'));
+                this.classList.add('active');
+
+                if (targetElement) {
+                    const offset = 140; 
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                    
+                    const targetToggle = targetElement.querySelector('.section-toggle');
+                    if (targetToggle && !targetToggle.classList.contains('is-open')) {
+                        window.toggleSection(targetToggle);
+                    }
+
+                    const allToggles = document.querySelectorAll('.section-toggle');
+                    allToggles.forEach(toggle => {
+                        if (toggle !== targetToggle) {
+                            toggle.classList.remove('is-open');
+                            if(toggle.querySelector('.section-toggle-icon')) toggle.querySelector('.section-toggle-icon').textContent = '+';
+                            if(toggle.nextElementSibling) toggle.nextElementSibling.style.maxHeight = null;
+                        }
+                    });
+                }
+            });
+        });
+
+        // Xử lý active nav khi cuộn
+        const sections = document.querySelectorAll('.section');
+        const observerOptions = {
+            root: null,
+            rootMargin: "0px 0px -80% 0px", 
+            threshold: 0
+        };
+
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const currentSectionId = '#' + entry.target.id;
+                    navItems.forEach(item => {
+                        item.classList.remove('active');
+                        if (item.getAttribute('href') === currentSectionId) {
+                            item.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(section => {
+            sectionObserver.observe(section);
+        });
+    });
+</script>
+</body>
+</html>
