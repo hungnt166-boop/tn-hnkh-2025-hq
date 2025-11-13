@@ -17,11 +17,11 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sổ Tay HNKH 2025 - Hàn Quốc">
     <meta property="og:description" content="Sổ tay thông tin Hội nghị Khách hàng Thống Nhất 2025 tại Hàn Quốc.">
-    <meta property="og:image" content="Https://tn-hnkh2025-hq.netlify.app/images/share-thumbnail.jpg">
-    <meta property="og:url" content="Https://tn-hnkh2025-hq.netlify.app/">
+    <meta property="og:image" content="https://hungnt166-boop.github.io/tn-hnkh-2025-hq/images/share-thumbnail.jpg">
+    <meta property="og:url" content="https://hungnt166-boop.github.io/tn-hnkh-2025-hq/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Sổ Tay HNKH 2025 - Hàn Quốc">
-    <meta name="twitter:image" content="Https://tn-hnkh2025-hq.netlify.app/images/share-thumbnail.jpg">
+    <meta name="twitter:image" content="https://hungnt166-boop.github.io/tn-hnkh-2025-hq/images/share-thumbnail.jpg">
 
     <script src="app.js" defer></script>
     
@@ -256,6 +256,22 @@
             height: 100%;
         }
         
+/* === LIGHTBOX (Zoom ảnh) === */
+.lightbox {
+    display: none; position: fixed; z-index: 1000;
+    padding: 10px; top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.85);
+    justify-content: center; align-items: center;
+}
+.lightbox-content {
+    max-width: 95%; max-height: 95%;
+    object-fit: contain;
+}
+.lightbox-close {
+    position: absolute; top: 20px; right: 30px;
+    color: #fff; font-size: 40px;
+    font-weight: bold; cursor: pointer;
+}
     </style>
 </head>
 <body>
@@ -578,7 +594,7 @@
         <div class="location-grid">
             
             <div class="location-card">
-                <img src="images/Gamcheon_thumb.jpg" alt="Làng văn hóa Gamcheon">
+                <img src="images/Gamcheon_thumb.jpg" alt="Làng văn hóa Gamcheon" class="zoomable">
                 <div class="card-content">
                     <h3>Làng văn hóa Gamcheon</h3>
                     <p class="card-description">
@@ -590,7 +606,7 @@
             </div>
 
             <div class="location-card">
-                <img src="images/Haeundae_Blueline_thumb.jpg" alt="Tàu ray Haeundae Blueline">
+                <img src="images/Haeundae_Blueline_thumb.jpg" alt="Tàu ray Haeundae Blueline" class="zoomable">
                 <div class="card-content">
                     <h3>🚟 Tàu Haeundae Blueline</h3>
                     <p class="card-description">
@@ -602,7 +618,7 @@
             </div>
             
             <div class="location-card">
-                <img src="images/Yonggungsa_thumb.jpg" alt="Đền Haedong Yonggungsa">
+                <img src="images/Yonggungsa_thumb.jpg" alt="Đền Haedong Yonggungsa" class="zoomable">
                 <div class="card-content">
                     <h3>⛩️ Đền Haedong Yonggungsa</h3>
                     <p class="card-description">
@@ -614,7 +630,7 @@
             </div>
 
             <div class="location-card">
-                <img src="images/Jagalchi_thumb.jpg" alt="Chợ cá Jagalchi">
+                <img src="images/Jagalchi_thumb.jpg" alt="Chợ cá Jagalchi" class="zoomable">
                 <div class="card-content">
                     <h3>🐟 Chợ cá Jagalchi</h3>
                     <p class="card-description">
@@ -626,7 +642,7 @@
             </div>
 
             <div class="location-card">
-                <img src="images/Nami_thumb.jpg" alt="Đảo Nami">
+                <img src="images/Nami_thumb.jpg" alt="Đảo Nami" class="zoomable">
                 <div class="card-content">
                     <h3>Đảo Nami (Namiseom)</h3>
                     <p class="card-description">
@@ -638,7 +654,7 @@
             </div>
             
             <div class="location-card">
-                <img src="images/Everland_thumb.jpg" alt="Công viên Everland">
+                <img src="images/Everland_thumb.jpg" alt="Công viên Everland" class="zoomable">
                 <div class="card-content">
                     <h3>🎠 Công viên Everland</h3>
                     <p class="card-description">
@@ -650,7 +666,7 @@
             </div>
 
             <div class="location-card">
-                <img src="images/Gyeongbokgung_thumb.jpg" alt="Cung điện Gyeongbokgung">
+                <img src="images/Gyeongbokgung_thumb.jpg" alt="Cung điện Gyeongbokgung" class="zoomable">
                 <div class="card-content">
                     <h3>Cung điện Gyeongbokgung</h3>
                     <p class="card-description">
@@ -662,7 +678,7 @@
             </div>
 
             <div class="location-card">
-                <img src="images/Fork_Museum_Seoul_thumb.jpg" alt="Bảo tàng Dân gian Quốc gia">
+                <img src="images/Fork_Museum_Seoul_thumb.jpg" alt="Bảo tàng Dân gian Quốc gia" class="zoomable">
                 <div class="card-content">
                     <h3>🏛️ Bảo tàng Dân gian Quốc gia</h3>
                     <p class="card-description">
@@ -674,7 +690,7 @@
             </div>
 
             <div class="location-card">
-                <img src="images/Starfield_Library_thumb.jpg" alt="Thư viện Starfield">
+                <img src="images/Starfield_Library_thumb.jpg" alt="Thư viện Starfield" class="zoomable">
                 <div class="card-content">
                     <h3>📚 Thư viện Starfield Seoul</h3>
                     <p class="card-description">
@@ -686,7 +702,7 @@
             </div>
 
             <div class="location-card">
-                <img src="images/Yonsei_thumb.jpg" alt="Đại học Yonsei">
+                <img src="images/Yonsei_thumb.jpg" alt="Đại học Yonsei" class="zoomable">
                 <div class="card-content">
                     <h3>🎓 Trường Đại học Yonsei</h3>
                     <p class="card-description">
@@ -698,7 +714,7 @@
             </div>
             
             <div class="location-card">
-                <img src="images/Jimjibang_thumb_2.jpg" alt="Jimjilbang (Tắm hơi công cộng)">
+                <img src="images/Jimjibang_thumb_2.jpg" alt="Jimjilbang (Tắm hơi công cộng)" class="zoomable">
                 <div class="card-content">
                     <h3>🧖 Trải nghiệm Jimjilbang</h3>
                     <p class="card-description">
@@ -900,23 +916,14 @@
             <button class="map-modal-button close" onclick="hideMapChoice()">Đóng lại</button>
         </div>
     </div>
-<div id="map-choice-modal" class="map-modal-overlay">
-    <div class="map-modal-content">
-        <h3 id="map-choice-title">Chọn ứng dụng bản đồ</h3>
-        <button class="map-modal-button kakao" onclick="openMap('kakao')">Kakao Map</button>
-        <button class="map-modal-button google" onclick="openMap('google')">Google Maps</button>
-        <button class="map-modal-button naver" onclick="openMap('naver')">Naver Map</button>
-        <button class="map-modal-button close" onclick="hideMapChoice()">Đóng lại</button>
-    </div>
-</div>
-
 <script>
-    // --- LOGIC MAP CHOICE (Khôi phục) ---
+    // --- LOGIC MAP CHOICE (V50s - Giữ nguyên) ---
     let currentMapChoice = { name: '', coords: '' };
 
     window.showMapChoice = function(locationName, coordinates) {
-        const modal = document.getElementById('map-choice-modal');
-        const title = document.getElementById('map-choice-title');
+        // Sửa lỗi V73: Dùng querySelectorAll để tìm đúng modal
+        const modal = document.querySelectorAll('#map-choice-modal')[0]; 
+        const title = modal.querySelector('#map-choice-title');
         currentMapChoice.name = locationName;
         currentMapChoice.coords = coordinates;
         title.textContent = `Chỉ đường tới ${locationName}`;
@@ -924,7 +931,9 @@
     }
 
     window.hideMapChoice = function() {
-        document.getElementById('map-choice-modal').style.display = 'none';
+        // Sửa lỗi V73: Dùng querySelectorAll để tìm đúng modal
+        const modal = document.querySelectorAll('#map-choice-modal')[0];
+        modal.style.display = 'none';
     }
 
     window.openMap = function(mapType) {
@@ -954,8 +963,8 @@
     }
     
     document.addEventListener('DOMContentLoaded', function() {
-
-        // --- 1. ACCORDION (Đóng/Mở Section) ---
+        
+        // --- SỬA LỖI 1: ACCORDION (Đóng/Mở) (V73 - Bổ sung JS) ---
         window.toggleSection = function(headerElement) {
             const content = headerElement.nextElementSibling;
             const icon = headerElement.querySelector('.section-toggle-icon');
@@ -972,8 +981,8 @@
             }
         };
 
-        // Khởi tạo trạng thái mở mặc định (Mở mục Liên Hệ và Địa Điểm)
-        document.querySelectorAll('.section-toggle.is-open').forEach(header => {
+        // Khởi tạo trạng thái mở mặc định
+        document.querySelectorAll('.section-header.is-open').forEach(header => {
              const content = header.nextElementSibling;
              setTimeout(() => {
                 if (content) {
@@ -982,48 +991,36 @@
              }, 50);
         });
 
-
-        // --- 2. TTS (Text-to-Speech) ---
-        const speech = window.speechSynthesis;
-        let voices = [];
-        const loadVoices = () => {
-            voices = speech.getVoices().filter(v => v.lang.includes('ko'));
-        };
-        // Tải giọng nói ngay khi có thể
-        if (speech.getVoices().length > 0) {
-            loadVoices();
-        }
-        speech.onvoiceschanged = loadVoices;
-
-        function playSpeech(text) {
-            if (speech.speaking) {
-                speech.cancel();
+        // --- SỬA LỖI 2: LIGHTBOX (Zoom Ảnh) (V73 - Bổ sung JS) ---
+        const lightbox = document.getElementById('myLightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        
+        document.addEventListener('click', function (e) {
+            const thumbnail = e.target.closest('img.thumbnail'); // Target .thumbnail
+            if (thumbnail) {
+                const fullImageSrc = thumbnail.dataset.full || thumbnail.src; // Lấy ảnh full
+                lightbox.style.display = 'flex';
+                lightboxImg.src = fullImageSrc;
             }
-            const utterance = new SpeechSynthesisUtterance(text);
-            
-            let koreanVoice = voices.find(v => v.lang === 'ko-KR');
-            if (!koreanVoice) {
-                koreanVoice = voices.find(v => v.lang.includes('ko'));
-            }
-
-            utterance.voice = koreanVoice;
-            utterance.lang = 'ko-KR';
-            utterance.rate = 0.9;
-            speech.speak(utterance);
-        }
-
-        document.querySelectorAll('.play-button').forEach(button => {
-            button.addEventListener('click', function(e) {
-                e.stopPropagation();
-                const text = this.dataset.text;
-                if (text) {
-                    playSpeech(text);
-                }
-            });
         });
+        
+        const closeBtn = document.querySelector('.lightbox-close');
+        if(closeBtn) {
+            closeBtn.onclick = function () {
+                lightbox.style.display = 'none';
+            }
+        }
+        lightbox.onclick = function (e) {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        }
 
-        // --- 3. NAVIGATION & SCROLL ---
-        const navItems = document.querySelectorAll('#main-nav .nav-item');
+        // --- SỬA LỖI 3: NAV ACTIVE (Nút Vàng) (V73 - Bổ sung JS) ---
+        const navItems = document.querySelectorAll('.nav a'); // Selector đúng
+        const sections = document.querySelectorAll('.section'); // Selector đúng
+        
+        // Xử lý Click
         navItems.forEach(item => {
             item.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -1043,49 +1040,112 @@
                         behavior: "smooth"
                     });
                     
-                    const targetToggle = targetElement.querySelector('.section-toggle');
+                    const targetToggle = targetElement.querySelector('.section-header'); 
                     if (targetToggle && !targetToggle.classList.contains('is-open')) {
                         window.toggleSection(targetToggle);
                     }
-
-                    const allToggles = document.querySelectorAll('.section-toggle');
-                    allToggles.forEach(toggle => {
-                        if (toggle !== targetToggle) {
-                            toggle.classList.remove('is-open');
-                            if(toggle.querySelector('.section-toggle-icon')) toggle.querySelector('.section-toggle-icon').textContent = '+';
-                            if(toggle.nextElementSibling) toggle.nextElementSibling.style.maxHeight = null;
-                        }
-                    });
                 }
             });
         });
 
-        // Xử lý active nav khi cuộn
-        const sections = document.querySelectorAll('.section');
+        // Xử lý Cuộn (Scroll)
         const observerOptions = {
             root: null,
-            rootMargin: "0px 0px -80% 0px", 
+            rootMargin: "0px 0px -50% 0px", // Dùng 50% top screen
             threshold: 0
         };
 
         const sectionObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const currentSectionId = '#' + entry.target.id;
-                    navItems.forEach(item => {
+            const intersectingEntry = entries.find(entry => entry.isIntersecting);
+
+            if (intersectingEntry) {
+                const currentSectionId = '#' + intersectingEntry.target.id;
+                navItems.forEach(item => {
+                    if (item.getAttribute('href') === currentSectionId) {
+                        item.classList.add('active');
+                    } else {
                         item.classList.remove('active');
-                        if (item.getAttribute('href') === currentSectionId) {
-                            item.classList.add('active');
-                        }
-                    });
-                }
-            });
+                    }
+                });
+            }
         }, observerOptions);
 
         sections.forEach(section => {
             sectionObserver.observe(section);
         });
-    });
+
+        // --- SỬA LỖI 4: NAV FADE (Hiệu ứng mờ) (V73 - Bổ sung JS) ---
+        const navWrapper = document.querySelector('.nav'); // Lấy .nav
+        const stickyContainer = document.querySelector('.sticky-ui-container');
+
+        if (navWrapper && stickyContainer) {
+            const checkNavScroll = () => {
+                const scrollLeft = navWrapper.scrollLeft;
+                const scrollWidth = navWrapper.scrollWidth;
+                const clientWidth = navWrapper.clientWidth;
+
+                if (scrollLeft > 10) {
+                    stickyContainer.classList.add('show-glow-left');
+                } else {
+                    stickyContainer.classList.remove('show-glow-left');
+                }
+
+                if (scrollWidth - scrollLeft - clientWidth > 10) {
+                    stickyContainer.classList.add('show-glow-right');
+                } else {
+                    stickyContainer.classList.remove('show-glow-right');
+                }
+            };
+            
+            navWrapper.addEventListener('scroll', checkNavScroll);
+            checkNavScroll(); // Chạy 1 lần khi tải trang
+        }
+
+        // --- SỬA LỖI 5: TTS (Phát âm) (V73 - Bổ sung JS) ---
+        const speech = window.speechSynthesis;
+        let voices = [];
+        const voiceNote = document.getElementById('voice-note');
+
+        const loadVoices = () => {
+            voices = speech.getVoices().filter(v => v.lang.includes('ko'));
+            if (voices.length > 0) {
+                if(voiceNote) voiceNote.textContent = "(Nhấn nút ▶ để nghe phát âm)";
+            } else {
+                if(voiceNote) voiceNote.textContent = "(Trình duyệt không hỗ trợ phát âm)";
+            }
+        };
+        
+        if (speech.onvoiceschanged !== undefined) {
+            speech.onvoiceschanged = loadVoices;
+        }
+        loadVoices(); // Tải lần đầu
+
+        function playSpeech(text) {
+            if (speech.speaking) {
+                speech.cancel();
+            }
+            const utterance = new SpeechSynthesisUtterance(text);
+            let koreanVoice = voices.find(v => v.lang === 'ko-KR');
+            if (!koreanVoice) {
+                koreanVoice = voices.find(v => v.lang.includes('ko'));
+            }
+            utterance.voice = koreanVoice;
+            utterance.lang = 'ko-KR';
+            utterance.rate = 0.9;
+            speech.speak(utterance);
+        }
+
+        document.querySelectorAll('.play-button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const text = this.dataset.text;
+                if (text) {
+                    playSpeech(text);
+                }
+            });
+        });
+
+    }); // Đóng 'DOMContentLoaded'
 </script>
 </body>
 </html>
