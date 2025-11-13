@@ -23,7 +23,6 @@
     <meta name="twitter:title" content="Sổ Tay HNKH 2025 - Hàn Quốc">
     <meta name="twitter:image" content="https://hungnt166-boop.github.io/tn-hnkh-2025-hq/images/share-thumbnail.jpg">
 
-    <script src="app.js" defer></script>
     
     <style>
         :root {
@@ -996,7 +995,7 @@
         const lightboxImg = document.getElementById('lightboxImg');
         
         document.addEventListener('click', function (e) {
-            const thumbnail = e.target.closest('img.thumbnail'); // Target .thumbnail
+            const thumbnail = e.target.closest('img.thumbnail, img.zoomable'); // Target .thumbnail
             if (thumbnail) {
                 const fullImageSrc = thumbnail.dataset.full || thumbnail.src; // Lấy ảnh full
                 lightbox.style.display = 'flex';
